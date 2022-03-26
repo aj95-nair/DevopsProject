@@ -29,7 +29,7 @@ const login = async (userdata ,res) => {
             username: user.username,
             role: user.role,
             email: user.email,
-            token: `Bearer ${token}`,
+            token: `${token}`,
             expiresIn: 48
         };
         return res.status(200).json({
